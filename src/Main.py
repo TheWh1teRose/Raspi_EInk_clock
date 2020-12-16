@@ -1,4 +1,7 @@
 from src.ConfigLoader import ConfigLoader
+from src.Modules.OpenWeather import OpenWeather
 
-config = ConfigLoader("example_config.yaml")
-print(config.getTimeZone())
+
+lon, lat = ConfigLoader().getWeatherCoordinats()
+temp = OpenWeather(ConfigLoader().getWeatherApiKey(), lon, lat)
+print(temp.getCourentTemperatur())

@@ -4,9 +4,15 @@ import yaml
 class ConfigLoader:
     yamlObject = None
 
-    def __init__(self, config_file_name):
-        with open("../" + config_file_name) as file:
+    def __init__(self):
+        with open("../config.yaml") as file:
             self.yamlObject = yaml.load(file, Loader=yaml.FullLoader)
 
-    def getTimeZone(self):
-        return self.yamlObject["timezone"]
+    def getTimeFormat(self):
+        return self.yamlObject["timeformat"]
+
+    def getWeatherApiKey(self):
+        return self.yamlObject["weather"]["api-key"]
+
+    def getWeatherCoordinats(self):
+        return self.yamlObject["weather"]["lon"], self.yamlObject["weather"]["lat"]
