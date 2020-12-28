@@ -1,0 +1,18 @@
+1 :
+  - module: timeLocal
+    layout: standart
+    x: 0
+    y: 0
+  - module: weather
+    layout: standart
+    x: 155
+    y: 0
+  - module: memories
+    layout: list
+    x: 0
+    y: 110
+2 :
+  - module: timeLocal
+    layout: standart
+    x: 0
+    y: 0

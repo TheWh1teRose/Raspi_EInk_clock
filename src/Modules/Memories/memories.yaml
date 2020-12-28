@@ -1,0 +1,10 @@
+memories:
+  - name: Test
+    date: 28.12.16
+  - name: Test2
+    date: 28.12.21
+  - name: Test3
+    date: 28.12.22
+    dateEnd: 30.12.21
+  - name: Test4
+    date: 03.01.21

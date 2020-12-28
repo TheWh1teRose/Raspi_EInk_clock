@@ -1,6 +1,6 @@
 from time import strftime, localtime
 
-from src.ConfigLoader import ConfigLoader
+from ConfigLoader import ConfigLoader
 
 
 class TimeLocal:
@@ -16,4 +16,4 @@ class TimeLocal:
             return strftime("%I:%M", localtime())
 
     def getDateString(self):
-        return strftime("%d.%m.", localtime())
+        return strftime("%A %d.%m.%y", localtime())
